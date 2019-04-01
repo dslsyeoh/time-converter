@@ -68,7 +68,7 @@ public class Converter
 
     private static double hoursToSeconds(double hours)
     {
-        return Math.round(hours * MINUTES * SECONDS);
+        return Math.round(minutesToSeconds(hours * MINUTES));
     }
 
     private static String getTime(String type, int time, double seconds)
